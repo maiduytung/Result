@@ -1,9 +1,9 @@
-[![vi](https://img.shields.io/badge/lang-vi-blue.svg)](https://github.com/tung-md/result/blob/master/README.md)
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/tung-md/result/blob/master/README.en.md)
+[![vi](https://img.shields.io/badge/lang-vi-blue.svg)](https://github.com/maiduytung/result/blob/master/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/maiduytung/result/blob/master/README.en.md)
 
-[![Tung.Result - NuGet](https://img.shields.io/nuget/v/Tung.Result.svg?label=Tung.Result%20-%20nuget)](https://github.com/users/tung-md/packages/nuget/package/Tung.Result) [![NuGet](https://img.shields.io/nuget/dt/Tung.Result.svg)](https://github.com/users/tung-md/packages/nuget/package/Tung.Result) [![Build Status](https://github.com/tung-md/Result/workflows/.NET%20Core/badge.svg)](https://github.com/tung-md/Result/actions?query=workflow%3A%22.NET+Core%22)
+[![Tung.Result - NuGet](https://img.shields.io/nuget/v/Tung.Result.svg?label=Tung.Result%20-%20nuget)](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result) [![NuGet](https://img.shields.io/nuget/dt/Tung.Result.svg)](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result) [![Build Status](https://github.com/maiduytung/Result/workflows/.NET%20Core/badge.svg)](https://github.com/maiduytung/Result/actions?query=workflow%3A%22.NET+Core%22)
 
-[![Tung.Result.AspNetCore - NuGet](https://img.shields.io/nuget/v/Tung.Result.AspNetCore.svg?label=Tung.Result.AspNetCore%20-%20nuget)](https://github.com/users/tung-md/packages/nuget/package/Tung.Result.AspNetCore) [![NuGet](https://img.shields.io/nuget/dt/Tung.Result.AspNetCore.svg)](https://github.com/users/tung-md/packages/nuget/package/Tung.Result.AspNetCore) &nbsp; [![Tung.Result.FluentValidation - NuGet](https://img.shields.io/nuget/v/Tung.Result.FluentValidation.svg?label=Tung.Result.FluentValidation%20-%20nuget)](https://github.com/users/tung-md/packages/nuget/package/Tung.Result.FluentValidation) [![NuGet](https://img.shields.io/nuget/dt/Tung.Result.FluentValidation.svg)](https://github.com/users/tung-md/packages/nuget/package/Tung.Result.FluentValidation)
+[![Tung.Result.AspNetCore - NuGet](https://img.shields.io/nuget/v/Tung.Result.AspNetCore.svg?label=Tung.Result.AspNetCore%20-%20nuget)](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result.AspNetCore) [![NuGet](https://img.shields.io/nuget/dt/Tung.Result.AspNetCore.svg)](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result.AspNetCore) &nbsp; [![Tung.Result.FluentValidation - NuGet](https://img.shields.io/nuget/v/Tung.Result.FluentValidation.svg?label=Tung.Result.FluentValidation%20-%20nuget)](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result.FluentValidation) [![NuGet](https://img.shields.io/nuget/dt/Tung.Result.FluentValidation.svg)](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result.FluentValidation)
 
 # Kết quả
 
@@ -60,13 +60,13 @@ public async Task<ActionResult<CustomerDTO>> GetCustomer(int customerId)
 
 Một cách tiếp cận khác là trả về `Tuple (Bộ dữ liệu)` kết quả mong đợi cùng với những thứ khác, như mã trạng thái và siêu dữ liệu chế độ lỗi bổ sung. Mặc dù các bộ dữ liệu có thể rất tốt cho các phản hồi riêng lẻ, linh hoạt, nhưng chúng không tốt khi có một cách tiếp cận duy nhất, tiêu chuẩn và có thể tái sử dụng cho một vấn đề.
 
-Mẫu Result cung cấp một cách tiêu chuẩn, có thể tái sử dụng để trả về cả thành công cũng như nhiều loại phản hồi không thành công từ các dịch vụ .NET theo cách có thể dễ dàng ánh xạ tới các loại phản hồi API. Mặc dù gói [Tung.Result](https://github.com/users/tung-md/packages/nuget/package/Tung.Result/) không phụ thuộc vào ASP.NET Core và có thể được sử dụng từ bất kỳ ứng dụng .NET Core nào, gói đồng hành [Tung.Result.AspNetCore](https://github.com/users/tung-md/packages/nuget/package/Tung.Result.AspNetCore/) bao gồm các tài nguyên để nâng cao việc sử dụng mẫu này trong các ứng dụng API web ASP.NET Core.
+Mẫu Result cung cấp một cách tiêu chuẩn, có thể tái sử dụng để trả về cả thành công cũng như nhiều loại phản hồi không thành công từ các dịch vụ .NET theo cách có thể dễ dàng ánh xạ tới các loại phản hồi API. Mặc dù gói [Tung.Result](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result/) không phụ thuộc vào ASP.NET Core và có thể được sử dụng từ bất kỳ ứng dụng .NET Core nào, gói đồng hành [Tung.Result.AspNetCore](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result.AspNetCore/) bao gồm các tài nguyên để nâng cao việc sử dụng mẫu này trong các ứng dụng API web ASP.NET Core.
 
 ## Cách sử dụng mẫu
 
 ### Tạo kết quả (Result)
 
-[Thư mục mẫu](https://github.com/tung-md/Result/tree/main/sample/Tung.Result.SampleWeb) bao gồm một số ví dụ về cách sử dụng dự án. Dưới đây là một vài cách sử dụng đơn giản.
+[Thư mục mẫu](https://github.com/maiduytung/Result/tree/main/sample/Tung.Result.SampleWeb) bao gồm một số ví dụ về cách sử dụng dự án. Dưới đây là một vài cách sử dụng đơn giản.
 
 Hãy tưởng tượng đoạn mã bên dưới được xác định trong một dịch vụ miền truy xuất WeatherForecasts. Khi so sánh với phương pháp được mô tả ở trên, phương pháp này sử dụng kết quả để xử lý các tình huống lỗi phổ biến như thiếu dữ liệu được biểu thị là Không tìm thấy và/hoặc lỗi xác thực đầu vào được biểu thị là Không hợp lệ. Nếu thực thi thành công, kết quả sẽ chứa dữ liệu ngẫu nhiên được tạo bởi câu lệnh return cuối cùng.
 
@@ -103,7 +103,7 @@ public Result<IEnumerable<WeatherForecast>> GetForecast(ForecastRequestDto model
 
 Tiếp tục với ví dụ về dịch vụ miền ở phần trước, điều quan trọng là phải chỉ ra rằng dịch vụ miền không biết về `ActionResult` các loại MVC/v.v. khác. Nhưng vì nó đang sử dụng `Result<T>` nên nó có thể trả về các kết quả dễ dàng được ánh xạ tới mã trạng thái HTTP. Lưu ý rằng phương thức trên trả về một `Result<IEnumerable<WeatherForecast>`nhưng trong một số trường hợp, nó có thể cần trả về một `Invalid` kết quả hoặc một `NotFound` kết quả. Nếu không, nó sẽ trả về `Success` kết quả có giá trị trả về thực tế (giống như API sẽ trả về HTTP 200 và kết quả thực tế của lệnh gọi API).
 
-Bạn có thể áp dụng `[TranslateResultToActionResult]` thuộc tính cho [API Endpoint](https://github.com/tung-md/ApiEndpoints) (hoặc controller action nếu bạn vẫn sử dụng nó) và nó sẽ tự động dịch kiểu trả về `Result<T>` của phương thức sang loại `ActionResult<T>` phù hợp dựa trên loại Result.
+Bạn có thể áp dụng `[TranslateResultToActionResult]` thuộc tính cho [API Endpoint](https://github.com/maiduytung/ApiEndpoints) (hoặc controller action nếu bạn vẫn sử dụng nó) và nó sẽ tự động dịch kiểu trả về `Result<T>` của phương thức sang loại `ActionResult<T>` phù hợp dựa trên loại Result.
 
 ```csharp
 [TranslateResultToActionResult]
@@ -253,4 +253,4 @@ public async Task<Result<BlogCategory>> UpdateAsync(BlogCategory blogCategory)
 
 ## Bắt đầu
 
-Nếu bạn đang xây dựng API ASP.NET Core Web, bạn chỉ cần cài đặt gói [Tung.Result.AspNetCore](https://github.com/users/tung-md/packages/nuget/package/Tung.Result.AspNetCore/) để bắt đầu. Sau đó, áp dụng thuộc tính `[TranslateResultToActionResult]` cho bất kỳ hành động hoặc bộ điều khiển nào mà bạn muốn tự động chuyển từ loại Result sang loại ActionResult.
+Nếu bạn đang xây dựng API ASP.NET Core Web, bạn chỉ cần cài đặt gói [Tung.Result.AspNetCore](https://github.com/users/maiduytung/packages/nuget/package/Tung.Result.AspNetCore/) để bắt đầu. Sau đó, áp dụng thuộc tính `[TranslateResultToActionResult]` cho bất kỳ hành động hoặc bộ điều khiển nào mà bạn muốn tự động chuyển từ loại Result sang loại ActionResult.
